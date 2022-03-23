@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Mountains Cars</title>
+        <meta charset=utf-8>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Стиль текста -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Подключенный Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Подключая часть фреймворка на клики -->
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+		<!-- подключенный Nouislider -->
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+		<!-- Подключенный Iсons -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Подключенный стиль -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+ </head>
+ <body>
+		<header>
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="tel:+79604438595"><i class="fa fa-phone"></i> +7 960 443 85 95</a></li>
+						<li><a href="mailto:Finsher@yandex.ru?subject=Вопрос по сайту"><i class="fa fa-envelope-o"></i> Finsher@yandex.ru</a></li>
+						<li><a href="https://yandex.ru/maps/-/CCU5F0GdPB"><i class="fa fa-map-marker"></i>Rostov-on-Don</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<li><a href="#"><i class="fa fa-rub"></i> Rub</a></li>
+						<li><a href="#"><i class="fa fa-user-o"></i> Мой аккаунт</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="#" class="logo">
+									<img src="./img/logo.gif" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="header-search">
+								<form>
+									<select class="input-select">
+										<option value="0">Категории</option>
+										<option value="1">Скорость</option>
+										<option value="1">Качество</option>
+									</select>
+									<input class="input" placeholder="Найти">
+									<button class="search-btn">Поиск</button>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								<div>
+									<a href="#">
+										<i class="fa fa-heart-o"></i>
+										<span>Понравившеся</span>
+										<div class="qty">0</div>
+									</a>
+								</div>
+								<div class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+										<i class="fa fa-shopping-cart"></i>
+										<span>Корзина</span>
+										<div class="qty">1</div>
+									</a>
+									<div class="cart-dropdown">
+										<div class="cart-list">
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="./img/car1.jpg" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">Mountain Car v1</a></h3>
+													<h4 class="product-price"><span class="qty">1x</span>$10.980</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+
+										</div>
+										<div class="cart-summary">
+											<small>1 выбранная покупка</small>
+											<h5>Цена: $10.980</h5>
+										</div>
+										<div class="cart-btns">
+											<a href="#">Просмотр покупки</a>
+											<a href="#">Сделать заказ  <i class="fa fa-arrow-circle-right"></i></a>
+										</div>
+									</div>
+								</div>
+
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<nav id="navigation">
+			<div class="container">
+				<div id="responsive-nav">
+					<ul class="main-nav nav navbar-nav">
+						<li class="active"><a href="#">Главная</a></li>
+						<li><a href="#">Лидеры покупок</a></li>
+						<li><a href="#">Все машины</a></li>
+						<li><a href="#">Скорость</a></li>
+						<li><a href="#">Качество</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="./img/car1.jpg" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Mountain Car v1<br>Новинка</h3>
+								<a href="#" class="cta-btn">Узнать больше <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="./img/car2.jpg" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Mountain Car v2<br>Новинка</h3>
+								<a href="#" class="cta-btn">Узнать больше <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="./img/car3.jpg" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Mountain Car v3<br>Новинка</h3>
+								<a href="#" class="cta-btn">Узнать больше <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">Лидеры продаж</h3>
+							<div class="section-nav">
+								<ul class="section-tab-nav tab-nav">
+									<li><a data-toggle="tab" href="#tab1">Лучшие машины по мнению пользователей</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="row">
+							<div class="products-tabs">
+								<div id="tab1" class="tab-pane active">
+									<div class="products-slick" data-nav="#slick-nav-1">
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/car1.jpg" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Лидеры продаж</p>
+												<h3 class="product-name"><a href="#">Mountain Car v1</a></h3>
+												<h4 class="product-price">$10.980 <del class="product-old-price">$14.274</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Добавить в избранные</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Узнать больше</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Количество просмотров: 101</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Добавить в корзину</button>
+											</div>
+										</div>
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/car2.jpg" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Лидеры продаж</p>
+												<h3 class="product-name"><a href="#">Mountain Car v2</a></h3>
+												<h4 class="product-price">$10.980 <del class="product-old-price">$14.274</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Добавить в избранные</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Узнать больше</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Количество просмотров: 101</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Добавить в корзину</button>
+											</div>
+										</div>
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/car3.jpg" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Лидеры продаж</p>
+												<h3 class="product-name"><a href="#">Mountain Car v2</a></h3>
+												<h4 class="product-price">$10.980 <del class="product-old-price">$14.274</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Добавить в избранные</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Узнать больше</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Количество просмотров: 101</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Добавить в корзину</button>
+											</div>
+										</div>
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/car1.jpg" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Лидеры продаж</p>
+												<h3 class="product-name"><a href="#">Mountain Car v1</a></h3>
+												<h4 class="product-price">$10.980 <del class="product-old-price">$14.274</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Добавить в избранные</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Узнать больше</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Количество просмотров: 101</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Добавить в корзину</button>
+											</div>
+										</div>
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/car2.jpg" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Лидеры продаж</p>
+												<h3 class="product-name"><a href="#">Mountain Car v2</a></h3>
+												<h4 class="product-price">$10.980 <del class="product-old-price">$14.274</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Добавить в избранные</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Узнать больше</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Количество просмотров: 101</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Добавить в корзину</button>
+											</div>
+										</div>
+									</div>
+									<div id="slick-nav-1" class="products-slick-nav"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="hot-deal" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="hot-deal">
+							<ul class="hot-deal-countdown">
+								<li>
+									<div>
+										<h3>356</h3>
+										<span>Days</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>1</h3>
+										<span>Hours</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>5</h3>
+										<span>Mins</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>60</h3>
+										<span>Secs</span>
+									</div>
+								</li>
+							</ul>
+							<h2 class="text-truncate">Скоро будут новые модели машин!</h2>
+							<p>Стоимость составит всего $14.000</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="newsletter" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="newsletter">
+							<p>Хочешь получать новости? <strong>Тогда подпишитесь на рассылку!</strong></p>
+							<form>
+								<input class="input" type="email" placeholder="Введите ваш email">
+								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Подписаться</button>
+							</form>
+							<ul class="newsletter-follow">
+								<li>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-pinterest"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">О компании</h3>
+								<p>Связь для получения информации о машине или компании.</p>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-map-marker"></i>Ростов-на-Дону</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>+7 960 443 85 95</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>finsher@yandex.ru</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Сервисы</h3>
+								<ul class="footer-links">
+									<li><a href="#">Личный кабинет</a></li>
+									<li><a href="#">Корзина покупок</a></li>
+									<li><a href="#">Понравившеесе</a></li>
+									<li><a href="#">Просмотренное</a></li>
+									<li><a href="#">Рассылка</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bottom-footer" class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<ul class="footer-payments">
+								<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+								<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+							</ul>
+							<span class="copyright">
+							Создано ©2022 | Mountain Cars | @Finsher
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+ </body>
+</html>
+
